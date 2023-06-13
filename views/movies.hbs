@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de películas</title>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style_m.css">
+</head>
+<body>
+  <h1>Lista de películas</h1>
+
+  <ul class="movies-list">
+    {{#each movies}}
+    <li class="movie-item">
+      <img class="movie-image" src="{{image}}" alt="{{title}} poster">
+      <h2 class="movie-title">{{title}}</h2>
+      <a class="movie-details-link" href="/movies/{{_id}}">Ver más</a>
+    </li>
+    {{/each}}
+  </ul>
+</body>
+</html>
